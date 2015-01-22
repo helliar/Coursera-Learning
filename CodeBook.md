@@ -3,52 +3,74 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '.XYZ' is used to denote 3 axial signals in the X, Y and Z directions.
+ 
+[2] "tBodyAcc.mean.X" %unit is m/sec^2       
+[3] "tBodyAcc.mean.Y"          
+[4] "tBodyAcc.mean.Z"          
+[5] "tGravityAcc.mean.X"       
+[6] "tGravityAcc.mean.Y"       
+[7] "tGravityAcc.mean.Z"       
+[8] "tBodyAccJerk.mean.X"      
+[9] "tBodyAccJerk.mean.Y"      
+[10] "tBodyAccJerk.mean.Z"      
+[11] "tBodyGyro.mean.X"         
+[12] "tBodyGyro.mean.Y"         
+[13] "tBodyGyro.mean.Z"         
+[14] "tBodyGyroJerk.mean.X"     
+[15] "tBodyGyroJerk.mean.Y"     
+[16] "tBodyGyroJerk.mean.Z"     
+[17] "tBodyAccMag.mean"         
+[18] "tGravityAccMag.mean"      
+[19] "tBodyAccJerkMag.mean"     
+[20] "tBodyGyroMag.mean"        
+[21] "tBodyGyroJerkMag.mean"    
+[22] "fBodyAcc.mean.X"          
+[23] "fBodyAcc.mean.Y"          
+[24] "fBodyAcc.mean.Z"          
+[25] "fBodyAccJerk.mean.X"      
+[26] "fBodyAccJerk.mean.Y"      
+[27] "fBodyAccJerk.mean.Z"      
+[28] "fBodyGyro.mean.X"         
+[29] "fBodyGyro.mean.Y"         
+[30] "fBodyGyro.mean.Z"         
+[31] "fBodyAccMag.mean"         
+[32] "fBodyBodyAccJerkMag.mean" 
+[33] "fBodyBodyGyroMag.mean"    
+[34] "fBodyBodyGyroJerkMag.mean"
+[35] "tBodyAcc.std.X"           
+[36] "tBodyAcc.std.Y"           
+[37] "tBodyAcc.std.Z"           
+[38] "tGravityAcc.std.X"        
+[39] "tGravityAcc.std.Y"        
+[40] "tGravityAcc.std.Z"        
+[41] "tBodyAccJerk.std.X"       
+[42] "tBodyAccJerk.std.Y"       
+[43] "tBodyAccJerk.std.Z"       
+[44] "tBodyGyro.std.X"          
+[45] "tBodyGyro.std.Y"          
+[46] "tBodyGyro.std.Z"          
+[47] "tBodyGyroJerk.std.X"      
+[48] "tBodyGyroJerk.std.Y"      
+[49] "tBodyGyroJerk.std.Z"      
+[50] "tBodyAccMag.std"          
+[51] "tGravityAccMag.std"       
+[52] "tBodyAccJerkMag.std"      
+[53] "tBodyGyroMag.std"         
+[54] "tBodyGyroJerkMag.std"     
+[55] "fBodyAcc.std.X"           
+[56] "fBodyAcc.std.Y"           
+[57] "fBodyAcc.std.Z"           
+[58] "fBodyAccJerk.std.X"       
+[59] "fBodyAccJerk.std.Y"       
+[60] "fBodyAccJerk.std.Z"       
+[61] "fBodyGyro.std.X"          
+[62] "fBodyGyro.std.Y"          
+[63] "fBodyGyro.std.Z"          
+[64] "fBodyAccMag.std"          
+[65] "fBodyBodyAccJerkMag.std"  
+[66] "fBodyBodyGyroMag.std"     
+[67] "fBodyBodyGyroJerkMag.std" 
 
-tBodyAcc.XYZ
-tGravityAcc.XYZ
-tBodyAccJerk.XYZ
-tBodyGyro.XYZ
-tBodyGyroJerk.XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc.XYZ
-fBodyAccJerk.XYZ
-fBodyGyro.XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
-
-The set of variables that were estimated from these signals are: 
-
-mean: Mean value
-std: Standard deviation
-mad: Median absolute deviation 
-max: Largest value in array
-min: Smallest value in array
-sma: Signal magnitude area
-energy: Energy measure. Sum of the squares divided by the number of values. 
-iqr: Interquartile range 
-entropy: Signal entropy
-arCoeff: Autorregresion coefficients with Burg order equal to 4
-correlation: correlation coefficient between two signals
-maxInds: index of the frequency component with largest magnitude
-meanFreq: Weighted average of the frequency components to obtain a mean frequency
-skewness: skewness of the frequency domain signal 
-kurtosis: kurtosis of the frequency domain signal 
-bandsEnergy: Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle: Angle between to vectors.
-
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
-
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
 
 Acitivity names:
 WALKING
@@ -62,3 +84,4 @@ SITTING
 STANDING
 
 LAYING
+
